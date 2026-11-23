@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //function exprition   
+    let prod = function (...args) {
+    let result = 1;
+
+    for (let val of args) {
+        result *= val;
+    }
+
+    return result;
+};
+
+console.log(prod(5, 4, 1));
+
+//arrow function 
+
+const prod = (...args) => {
+    let result = 1;
+
+    for (let val of args) {
+        result *= val;
+    }
+
+    return result;
+};
+
+console.log(prod(5, 4, 1));
+
+//sum of array
+const sumOfArr = (arr) => {
+    let sum = 0;
+
+    for (let val of arr) {
+        sum += val;
+    }
+
+    return sum;
+};
+
+console.log(sumOfArr([2, 4, 7, 9, 15]));
+
+//factorial
+const factorial = (n) => {
+    let fact = 1;
+
+    for (let i = 1; i <= n; i++) {
+        fact *= i;
+    }
+
+    return fact;
+};
+
+console.log(factorial(6));
+//even or add 
+
+const verify = (n) => (n % 2 === 0 ? "Even" : "Odd");
+
+console.log(verify(15));
+
+//volume
+const volume = (l, b, h) => l * b * h;
+
+console.log(volume(3, 5, 8));
+
+//maximum of two nymbers
+const max = (a, b) => (a > b ? a : b);
+
+console.log(max(10, 20));
+
+//suare
+const square = (n) => n * n;
+
+console.log(square(6));
+
+
+//add two number 
+
+const add = (a, b) => a + b;
+
+console.log(add(5, 3));
+
+
+
+
+    </script>
+    
+</body>
+</html>

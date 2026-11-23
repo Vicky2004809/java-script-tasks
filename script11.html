@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Async function that returns "HappyBirthday!"
+        // async function greet()
+        //  {
+        //     return "HappyBirthday!";
+        // }
+
+        // greet().then(result => {
+        //     console.log(result);
+
+        // });
+
+
+
+        //wait for 2 seconds using await 
+        function loadData(){
+            return new Promise(resolve => {
+                setTimeout(() => {
+                    resolve("Data loaded");
+                }, 2000);
+            });
+        }
+        
+        
+        async function display(){
+            console.log("loading...");
+            const data = await loadData();
+            console.log(data);
+        }
+        display();
+
+
+        //Display a number using await 
+
+        // function get
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //     let str = prompt("enter a string:");
+    //     let reversed ="";
+    //     for (let i = str.length -1; i >=0; i--)
+    // {
+    //     reversed += str[i];
+
+    // }
+    // console.log(reversed);
+
+
+    // let str = prompt("enter a string:");
+    // let reversed = str.split("").reverse().join(""); 
+     
+    // if  (str === reversed){
+    //     console.log("palindrome");
+
+    // } 
+    // else{
+    //     console.log("not a palindrome");
+    // }
+
+    // const  isPalindrome = str =>
+    // str === str.split("").reverse().join("");
+    // let word = prompt("enter a string:");
+    // console.log(isPalindrome(word) ? "palindrome" : "not a palindrome");
+
+    // let n = parseInt(prompt("please enter the size of the array:"));
+    // let a=[];
+    // for(let i=0;i<n;i++){
+    //     a[i] = parseInt(prompt(`enter value $(i + 1):`));
+
+    // }
+    // for (let i =0; i < a.length; i++){
+    //     for(let j = 0; j <a.length; j++){
+    //         if (a[i] < a[i]){
+    //             let t = a[i];
+    //             a[i] = a[j];
+    //             a[j] = t;
+
+    //         }
+    //     }
+    // }
+    // for (let i = 0; i< a.length; i++){
+    //     console.log(a[i]);
+
+    // }
+
+
+//  const sorting = (arr) => {
+//     for (let i = 0; i < arr.length - 1; i++) {
+//         for (let j = i + 1; j < arr.length; j++) {
+//             if (arr[i] > arr[j]) {
+//                 let temp = arr[i];
+//                 arr[i] = arr[j];
+//                 arr[j] = temp;
+//             }
+//         }
+//     }
+//     return arr;
+// };
+
+// let arr = [3, 2, 40, 50, 70];
+// console.log(sorting(arr));
+
+
+let a=prompt("enter a numbres:")
+.split("")
+.map(Number);
+a.sort((a,b) => a-b);
+console.log(a);
+    
+    
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

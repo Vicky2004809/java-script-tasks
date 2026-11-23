@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Document</title>
+
+</head>
+
+<body>
+
+
+<script>
+
+1 2 3 4 5 6 7 8 series of 1 to 20
+
+1 3 5 7 9 series of 1 to 20 odd
+
+0 2 4 6 8 series of even 0 to 20
+
+0 5 10 15 20 25(5 series)
+
+1 + 2 + 3 + 4 + .....
+
+0 + 2 + 4 + 6 + ...
+
+1 + 3 + 5 + 7 + 9.....
+
+0 + 5 + 10 + 15 + 20 + .....
+
+1 / 1! + 2 / 2! + 3 / 3! + 4 / 4!.....
+
+0 + 2 / 2! + 4 / 4! + 6 / 6!....
+
+1 / 1! + 3 / 3! + 5 / 5!....
+
+factorial of a given no 5!=5*4*3*2*1 =120
+
+find out the given no is prime or not
+
+14.print the prime no series
+
+15.find out the given no is Armstrong no or not (153= 1 ^ 3 + 5 ^ 3 + 3 ^ 3 = 153)
+
+16.print the Armstrong no series
+
+17.Fibnacie Series(0 1 1 2 3 5 8 13..)
+
+18.Print the 5 Table(1 * 5 = 5)
+
+19.Sum of digit(1 + 2 + 3 + ...)
+
+20.Palindrom or not BAAB,MALAYALAM
+
+11. 1 / 1! + 3 / 3! + 5 / 5!....
+
+let s="";
+ 
+for(let i=1;i<=10;i++)
+
+{
+
+s+=i + "/" + i + "!" + "+";
+
+}
+
+console.log(s);
+
+15.find out the given no is Armstrong no or not (153= 1 ^ 3 + 5 ^ 3 + 3 ^ 3 = 153)
+
+let r,temp,sum=0;
+
+let n=Number(prompt("Enter a number to find Armstrong or not")); 153
+
+temp=n;
+
+while(temp>0)
+
+{
+
+r=parseInt(temp)%10; 3 5 1
+
+sum+=r*r*r; 0+27+ 125 = 152 152+1 = 153
+
+temp=parseInt(temp)/10; 1
+
+}
+
+if(sum==n)
+
+{
+
+console.log(`The Given no ${n} is an armstrong number`);
+}
+
+else{
+
+console.log(`The Given no ${n} is not an armstrong number`);
+
+}
+
+16.print the Armstrong no series
+
+let n=1;
+
+while(n<=1000)
+
+{
+
+let r,temp,sum=0;
+
+temp=n;
+
+while(temp>0)
+
+{
+
+r=parseInt(temp)%10; 3 5 1
+
+sum+=r*r*r; 0+27+ 125=152 152+1 =153
+
+temp=parseInt(temp)/10; 15 1
+
+}
+
+if(sum==n)
+
+{
+
+console.log(n);
+
+}
+
+n++;
+
+}
+19.Sum of digit(1 + 2 + 3 + ...)
+
+let n=Number(prompt("Enter a last number for te series")); //10
+
+let sum=0;
+
+for(let i=1;i<=n;i++)
+
+{
+
+sum+=i;
+
+}
+
+console.log("Sum of Series = " + sum);
+
+console.log(`Avg of Series = ${sum/n}`);
+
+19.Sum of digit(147 = 1+4+7=12)
+
+let n=Number(prompt("Enter a number find thew sum of digit")); //147 = 1+4+7=12
+
+let r,sum=0,q;
+
+while(n>0)
+
+{
+
+r=parseInt(n)%10; // 7
+
+sum+=r;
+
+n=parseInt(n)/10;
+
+}
+
+console.log("Sum of digit = " + sum);
+
+20.Palindrom or not BAAB,MALAYALAM 1221
+
+let s=prompt("Enter a string value to findout palindrom or not" );//BAAB,MALAYALAM
+
+let p="";
+
+for(let i=s.length-1;i>=0;i--)
+
+{
+
+    p+=s[i];
+
+}
+
+console.log(p);
+
+if(p==s)
+
+{
+
+console.log("palindrom");
+
+}
+
+else
+
+{
+
+console.log("Not a palindrom")
+
+}
+
+</script>
+
+</body>
+
+</html>

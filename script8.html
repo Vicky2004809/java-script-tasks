@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //save
+        // localStorage.setItem("user", "John");
+        // localStorage.setItem("password", "john123");
+
+        // console.log(localStorage.getItem("username"));
+        // console.log(localStorage.getItem("password"));
+
+        // localStorage.removeItem("username");
+        // console.log("1 = " + localStorage.getItem("username"));
+        // console.log("1 = " + localStorage.getItem("password"));
+
+
+        // localStorage.clear();
+        // console.log("2 = "+ localStorage.getItem("uasername"));
+        // console.log("2 = "+ localStorage.getItem("password"));
+
+
+        //section storage
+
+
+
+        // sessionStorage.setItem("user", "John");
+        // sessionStorage.setItem("password", "john123");
+
+        // console.log(sessionStorage.getItem("username"));
+        // console.log(sessionStorage.getItem("password"));
+
+        // localStorage.removeItem("username");
+        // console.log("1 = " + sessionStorage.getItem("username"));
+        // console.log("1 = " + sessionStorage.getItem("password"));
+
+
+        // localStorage.clear();
+        // console.log("2 = "+ sessionStorage.getItem("uasername"));
+        // console.log("2 = "+ sessionStorage.getItem("password"));
+
+
+        function login(){
+            let empname=document.getElementById('empname').value;
+            let empmobile=document.getElementById('empmobile').value;
+            let empemail=document.getElementById('empemail').value;
+            let empcity=document.getElementById('empcity').value;
+            let empgender=document.getElementById('empgender').value;
+            
+
+            let Employer={
+                empname:empname,
+                empmobile:empmobile,
+                empemail:empemail,
+                empcity:empcity,
+                empgender:empgender,
+            };
+            localStorage.setItem('employer',Json.stringify(Employer) );
+            alert('Employee data registred successfully');
+
+        }
+
+           function displayDate(){
+                data = JSON.parse(localStorage.getItem('Employee'))
+                console.log(data);
+                alert(
+                    `emp name : ${data.empname} \n
+                    emp mobile : ${data.empmobile}\n
+                    emp city : ${data.empcity}`
+                )
+
+        }
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+    <div>
+        <h2>
+            registration page
+        </h2>
+        <label>name</label>
+        <input type = "text" id ="empname" >
+        <label>mobile</label>
+        <input type="tel" id = "empmobile">
+        <label>email</label>
+        <input type="email" id="empemail">
+        <label>city</label>
+        <input type="text" id="empcity">
+        <label>Gender</label>
+        <input type="text" id="empgender">
+
+        <button onclick = "register()">register </button>
+        <button onclick="dispalyData()">Display registraion information</button>
+    </div>
+</body>
+</html>
